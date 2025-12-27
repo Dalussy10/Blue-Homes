@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+<!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  
+<!-- css     -->
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg ">
+  <div class="container">
+    <a class="navbar-brand me-auto" href="#"> <img src="./img/grok_image_xjhnfuq.jpg" alt="" style="width: 100%; height: 50px; object-fit: cover;"></a>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./img/grok_image_xjhnfuq.jpg" alt="" style="width: 100%; height: 50px; object-fit: cover;"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active ex-lg-2" aria-current="page" href="./navbar.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ex-lg-2" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ex-lg-2" href="#service">Service</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link ex-lg-2" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a href="" class="btn btn-dark login-button">Login</a>
+    <button class="navbar-toggler pe-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+</nav>
+<!-- end navbar -->
+
+
+
+<div class="trial-wrapper">
+  <div class="trial img">
+    <img src="./img/grok_image_xph5slc.jpg" alt="">
+  </div>
+  <div class="trial about">
+    <p>303Mr Bee,<br>Puf Turf, BA 33456</p>
+    <ion-icon name="location" size="large"></ion-icon>
+    <table>
+      <tbody>
+        <tr>
+         <td><h1>3</h1></td>
+         <td><h1>3</h1></td>
+         <td><h1>989</h1></td>
+        <tr>
+          <td><p>beds</p></td>
+          <td><p>baths</p></td>
+          <td><p>sqft</p></td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>$950,000</h3>
+    
+    <select name="Split-option" class="select">
+      <option value="part payment">Part Payment</option>
+      <option value="half payment">Half Payment</option>
+      <option value="fullpayment">Full Payment</option>
+    </select>
+    <div class="agent">
+      <img src="./img/grok_image_xp4hdem.jpg" alt="">
+      <p>Agent</p><br>
+      <h5>Usman <br>Dalhat </h5>
+      <a href="./contact.html" class="btn btn-outline-dark login-button"> Contact</a>
+
+    </div>
+    <a href="" class="btn btn-dark login-button">Request a tour <br> <span>earlest a 10:00 tomorrow</span></a>
+  </div>
+</div>
+
+<div class="search-container">
+  <div class="search-field">
+      <label>Transaction Type</label>
+      <select name="transaction" >
+          <option value="buy">Buy</option>
+          <option value="rent">Rent</option>
+          <option value="sold">Recently Sold</option>
+      </select>
+  </div>
+  <div class="search-field">
+      <label>Home Type</label>
+      <select name="type">
+          <option value="any">Any Type</option>
+          <option value="single-family">Single Family</option>
+          <option value="condo">Condo/Townhouse</option>
+          <option value="multi-family">Multi-Family</option>
+          <option value="land">Land/Lots</option>
+      </select>
+  </div>
+  <div class="search-field">
+      <label>Location</label>
+      <input type="text" name="location" placeholder="City, Neighborhood, ZIP, Address" />
+  </div>
+  <div class="search-field">
+      <label>Price</label>
+      <input type="text" name="Price" placeholder="Ranging from 1million & above" />
+  </div>
+  <button type="submit" class="search-btn">
+      Search Properties
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+      </svg>
+  </button>
+</div>
+<!-- page wrapper -->
+ 
+
+<div class="popular-wrapper">
+  <h1>Popular in Your Area</h1>
+  <a href="./more.html" class="btn btn-outline-dark">Explore More>> </a>
+  <div class="popular-post">
+  <div class="popular a">
+    <img src="./img/20251219_064547.jpg" alt="">
+    <div class="popular-content">
+      <h2 class="price">$25,000</h2>
+      <span>3 beds 3 baths 1,650 sq ft</span>
+      <span>3456 apple steet,kaduna, Nigeria</span>
+    </div>
+  </div>
+  <div class="popular b">
+    <img src="./img/20251219_064606.jpg" alt="">
+   <div class="popular-content">
+      <h2 class="price">$25,000</h2>
+      <span>3 beds 3 baths 1,650 sq ft</span><br>
+      <span>3456 apple steet,kaduna, Nigeria</span>
+    </div>
+  </div>
+  <div class="popular c">
+    <img src="./img/20251219_064623.jpg" alt="">
+    <div class="popular-content">
+      <h2 class="price">$25,000</h2>
+      <span>3 beds 3 baths 1,650 sq ft</span>
+      <span>3456 apple steet,kaduna, Nigeria</span>
+    </div>
+  </div>
+  </div>
+</div>
+<section id="service">
+<div class="why-page">
+  <div class="why">
+  <h2 class="h2-why">Why you should invest in<br>  Blue home?</h2>
+  <p>Owning home is an exciting adventure. our dedicated agents are here to guide you in every step of the way <br> 
+    keeping you on budget and on track for a smooth closing.</p>
+    </div>
+
+  <div class="why-content">
+    <div class="content">
+      <img src="./img/grok_image_xp4hdem.jpg" alt="">
+      <h4>BUY</h4>
+      <p>Bue Home agents have extensive experience and can guide to success in todays competative market.</p>
+      <a href="" class="btn btn-outline-dark">Find an agent</a>
+    </div>
+    <div class="content">
+     <img src="./img/grok_image_1capis.jpg" alt="">
+      <h4>Sell</h4>
+      <p>We excel at pricing, promoting, and closing your home sale for the best possible return, all at half commission.</p>
+      <a href="" class="btn btn-outline-dark">Learn More</a>
+    </div>
+    <div class="content">
+      <img src="./img/grok_image_xixv56n.jpg" alt="">
+      <h4>Rent</h4>
+      <p>Discover tailor property suggetions, easy tour booking, and smooth application proceaaea with our reliable rentals support</p>
+      <a href="" class="btn btn-outline-dark">Get started</a>
+    </div>
+    
+  </div>
+</div>
+</section>
+<div class="neighborhood-page">
+<h1>Neighborhoods</h1>
+<a href="./more.html" class="btn btn-outline-dark">Explore More>> </a>
+<div class="grid-box">
+  <div class="box" style="grid-area: box-1;">
+    <img src="./img/grok_image_xph5slc.jpg" alt="" style="height: 610px;">
+  </div>
+  <div class="box" style="grid-area: box-2;">
+    <img src="./img/grok_image_f0gjnt.jpg" alt="" >
+  </div>
+  <div class="box" style="grid-area: box-3;">
+    <img src="./img/grok_image_xubtwtv.jpg" alt="" >
+  </div>
+  <div class="box" style="grid-area: box-4;">
+    <img src="./img/grok_image_xa8jq1h.jpg" alt="" >
+  </div>
+</div>
+</div>
+
+
+
+<div class="invest">
+  <h1>invest in real estate now to secure <br> your future.</h1>
+  <a href="#" class="btn btn-dark btn-bg"> Invest Now</a>
+</div>
+
+<!-- //page wrapper -->
+
+
+ 
+<footer class="footer-dark">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>BLUE HOMES</h3>
+        <p>Curating exceptional properties since 2012</p>
+      </div>
+
+      <div>
+        <strong>Quick Links</strong>
+        <ul>
+          <li><a href="/properties/for-sale">Homes for Sale</a></li>
+          <li><a href="/properties/for-rent">Rentals</a></li>
+          <li><a href="/valuation">Home Valuation</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <strong>Our Office</strong>
+        <address>
+          21 Rimi Drive<br>
+          Abuja, Nigeria<br>
+          +234 (090) 1475-5133<br>
+          <a href="mailto:ussmandalhat@gmail.com">usmandalhat@gmail.com</a>
+        </address>
+      </div>
+    </div>
+
+    <div class="footer-meta">
+      <span>© 2025 Blue Homes • Licensed Real Estate Broker</span>
+      <div class="social-small">
+        <a href="https://x.com/Dal_ussy?t=dnkWyyGBzKgJtYW5ADXi3g&s=08">X</a> 
+        • <a href="https://www.facebook.com/usman.dalhat.142">FB</a> •
+         <a href="https://www.linkedin.com/in/ussman-dalhat-b7b4b1270?utm_source=share&utm_
+              campaign=share_via&utm_content=profile&utm_medium=android_app">LI</a> •
+               <a href="https://wa.me/09014755133">WA</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ioncon link -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</div>
+<!-- bootstrap.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+    
